@@ -1,35 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <title>Code quiz</title>
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-    <main class="container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttoms" class="btn-grid">
-                <button class="btn">answer1</button>
-                <button class="btn">answer2</button>
-                <button class="btn">answer3</button>
-                <button class="btn">answer4</button>
+    <div class="container">
+    
+        <div class="block content">
+    
+            <div class="wrapper">
+    
+                <form id='form-result' class="hide" action="">
+                    <div class="SP-container">
+                        <div class="modal-text modal-text-bigger">Done !</div>
+                        <div class="modal-text">Right answers:</div>
+    
+                        <!-- 4. here's where we show right answers: span id="right-answers" -->
+                        <div class="modal-text"><span id="right-answers" class="count"> 12 </span> of <span
+                                id="all-questions" class="count">count-of-questions</span> (<span
+                                id="answers-percent"></span>%)</div>
+                    </div>
+                </form>
+    
+                <div id="question-container" class="hide">
+                    <div class="number-of-question-text">Question № <span id="current-question">YYY</span> of <span
+                            id="all-questions2">XXX</span></div>
+                    <div id="question">Question</div>
+                    <div id="answer-buttons">
+                        <button class="btn">Answer 1</button>
+                        <button class="btn">Answer 2</button>
+                        <button class="btn">Answer 3</button>
+                        <button class="btn">Answer 4</button>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="start-btn" class="start-btn">Start</button>
+                    <button id="next-btn" class="next-btn hide">Next</button>
+                </div>
+    
             </div>
-
+    
         </div>
-        
-    </main>
-    <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
+    
+    
     </div>
-
     
+    </body>
     
-</body>
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-<script src="script.js"
-</html>
+    </html>

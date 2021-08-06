@@ -23,7 +23,7 @@ body {
   max-width: 80%;
   background-color: white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0 0 10px 4px;
 }
 
@@ -71,4 +71,20 @@ body {
 
 .hide {
   display: none;
+}
+p {
+  text-align: end;
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+.count {
+  font-size: 40px;
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  flex-grow: column;
+  justify-content: end;
+  align-items: flex-end;
+  text-align: end;
 }
